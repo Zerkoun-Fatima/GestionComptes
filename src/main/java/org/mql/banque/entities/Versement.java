@@ -16,6 +16,14 @@ public class Versement extends Operation {
 	public Versement(Date dateOperation, double montant) {
 		super(dateOperation, montant);
 	}
+	
+	@Override
+	public String toString() {
+		return "Versement";
+	}
+	
+	
+
 
 	
 }

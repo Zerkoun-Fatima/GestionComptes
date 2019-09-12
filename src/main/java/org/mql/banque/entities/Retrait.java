@@ -17,4 +17,9 @@ public class Retrait extends Operation {
 		super(dateOperation, montant);
 	}
 
+	@Override
+	public String toString() {
+		return "Retrait";
+	}
+
 }

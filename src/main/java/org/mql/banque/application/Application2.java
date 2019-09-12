@@ -19,7 +19,7 @@ public class Application2 {
 		System.out.println("Client :"+ compte.getClient().getNomClient());
 		System.out.println("Employe :"+ compte.getEmploye().getNomEmploye());
 		
-		List<Operation> operations = metier.consulterOperations("CC1");
+		List<Operation> operations = metier.consulterOperations("CC1",0,5);
 		for (Operation operation : operations) {
 			System.out.println("***************************");
 			System.out.println(operation.getNumeroOperation());

@@ -4,6 +4,7 @@ import java.util.Date;
 
 import org.mql.banque.entities.Client;
 import org.mql.banque.entities.CompteCourant;
+import org.mql.banque.entities.CompteEpargne;
 import org.mql.banque.entities.Employe;
 import org.mql.banque.entities.Groupe;
 import org.mql.banque.metier.IBanqueMetier;
@@ -29,7 +30,7 @@ public class Application1 {
 		metier.addEmployeToGroupe(3L, 2L);
 		
 		metier.addCompte(new CompteCourant("CC1", new Date(), 9000, 8000), 1L, 2L);
-		metier.addCompte(new CompteCourant("CE1", new Date(), 40000, 5.5), 2L, 2L);
+		metier.addCompte(new CompteEpargne("CE1", new Date(), 40000, 5.5), 2L, 2L);
 	
 		metier.versement("CC1", 5000, 2L);
 		metier.retrait("CC1", 6000, 2L);
